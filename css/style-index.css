@@ -1,0 +1,259 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Cabin Condensed', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+h1 {
+    text-align: left;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#header {
+    position:relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw 4vw;
+    pointer-events: auto;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 30px;
+    color: #6D709D;
+    text-decoration: none;
+}
+.menu .navbar ul li a:hover {
+    color: #303030;
+}
+.header-action{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+    margin-right: 20px;
+}
+.instagram ion-icon {
+    color: #303030;
+}
+#about{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.about-text {
+    width: 50%;
+    padding: 50px;
+}
+.about-text h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.about-text p {
+    line-height: 30px;
+}
+.about-img {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+}
+.about-img img {
+    width: 340px;
+}
+#job {
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.job1-content {
+    display: flex;
+    width: 100%;
+}
+.job1-img {
+    width: 50%;
+    text-align: center;
+}
+.job1-img img {
+    width: 454px;
+    width: 100%;
+}
+.job1-text {
+    width: 50%;
+    padding: 50px;
+}
+.job2-content {
+    display: flex;
+    flex-direction: row-reverse; /* Invertimos el orden de los elementos */
+    width: 100%;
+}
+.job2-img {
+    width: 50%;
+    text-align: center;
+}
+.job2-img img {
+    width: 100%;
+    max-width: 654px;
+}
+.job2-text {
+    width: 50%;
+    padding: 20px;
+}
+.text-claro {
+    color: #6D709D;
+}
+#proyect {
+    padding: 50px 0;
+}
+.proyect h2 {
+    text-align: left;
+    font-size: 28px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.proyect-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+}
+.shadow-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    max-width: 400PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shadow-box img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.shadow-box p {
+    font-size: 18px;
+    text-align: center;
+}
+#box1, #box2, #box3 {
+    height: auto;
+}
+#footer {
+    border-top: 2px solid #f5f5f5;
+    background-color: #2E5BFF;
+    color: #F3F6FD;
+    padding: 20px 0 0 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text h2 {
+    font-size: 45px;
+    color: #33C3BA;
+}
+.footer-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-top: 6%;
+}
+.footer-socials a {
+    color: #F3F6FD;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+@media(max-width:911px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .socials-1{
+        display: none;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #F3F6FD;
+        padding: 20px;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
