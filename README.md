@@ -16,7 +16,7 @@ Actualmente, el proyecto está en desarrollo activo, enfocándome en la implemen
 
 ## Capturas de Pantalla
 
-![captura de pantalla del  wireframe de alta fidelidad](https://github.com/NathCodeArt/NathCodeArt/assets/127164921/efa2b8c0-f845-4d4e-b614-e57c5420c8a9)
+![captura de pantalla del  wireframe de alta fidelidad](https://github.com/NathCodeArt/portfolio-website-project/assets/127164921/91fb3ca6-df42-422d-a443-ea68f962be03)
 
 ## Características
 
