@@ -8,10 +8,19 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
+/*paleta de color*/
+:root {
+    --text: #02050d;
+    --background: #f5f5f5;
+    --primary: #f5b505;
+    --secondary: #ecfdb4;
+    --accent: #e13805;
+    --icon: #303030;
+}
 
 body {
     font-family: 'Cabin Condensed', sans-serif;
-    background-color: #f5f5f5;
+    background-color:var(--background);
     min-height: 100vh;
 }
 p {
@@ -22,21 +31,23 @@ p {
 }
 h1 {
     text-align: left;
+    color: var(--text);
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 #header {
-    position:relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     box-sizing: border-box;
-    padding: 1vw 4vw;
+    padding: 1.3rem 10%;
     pointer-events: auto;
-    background: red;
+    background: var(--accent);
     justify-content: space-between;
     align-items: center;
+    display: flex;
 }
 .menu {
     display: flex;
@@ -62,28 +73,27 @@ h1 {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 30px;
-    color: #6D709D;
+    opacity: 30%;
     text-decoration: none;
 }
 .menu .navbar ul li a:hover {
-    color: #303030;
+    color: var(--text);
 }
 .header-action{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    width: 30px;
+    margin-right: 19px;
+}
+.intagram{
+    color: var();
 }
 .logo {
-    display: flex;
-    align-items: center;
-}
-.logo img {
     width: 40px;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color:var(--icon);
 }
-.instagram ion-icon {
-    color: #303030;
-}
+
 #about{
     display: flex;
     height: auto;
@@ -114,6 +124,10 @@ h1 {
 }
 .about-img img {
     width: 340px;
+}
+.enlace{
+    width: 20px;
+    color: var(--icon);
 }
 #job {
     display: flex;
@@ -158,6 +172,21 @@ h1 {
 }
 #proyect {
     padding: 50px 0;
+}
+/*imagenes de enlaces github & open-outline a proyectos o histrial de trabajo*/
+.enlace_gh-pg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enlace_gh-pg a {
+    width: 30px;
+    margin: 0 10px;
+    color: var(--icon);
+}
+/* Esto ocult los iconos que no se requieren */
+#box3 .enlace_gh-pg a:nth-child(1) {
+    display: none;
 }
 .proyect h2 {
     text-align: left;
