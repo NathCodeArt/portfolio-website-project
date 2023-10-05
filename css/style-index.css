@@ -30,6 +30,7 @@ p {
     text-align: left;
     margin-bottom: 35px;
     font-size: 17px;
+    color: var(--text);
 }
 
 h1 {
@@ -96,10 +97,16 @@ h1 {
 }
 
 .menu .navbar ul li a {
-    font-size: 18px;
+    font-size: 23px;
     padding: 30px;
-    opacity: 0.3;
+    opacity: 0.7;
     text-decoration: none;
+    color: var(--background);
+    font-weight: bold;
+}
+
+.menu .navbar ul li a.active {
+    color: var(--text);
 }
 
 .menu .navbar ul li a:hover {
@@ -231,11 +238,12 @@ h1 {
 }
 
 .text-claro {
-    color: #6D709D;
+    color: var(--icon);
 }
 
 #proyect {
     padding: 50px 0;
+    text-align: center;
 }
 
 .icon-box {
@@ -254,11 +262,8 @@ h1 {
 .icon-box img {
     width: 30px;
     height: 30px;
-    /* Ajusta el tamaño de los íconos según sea necesario */
     margin: 0 10px;
-    /* Ajusta el espacio entre los íconos según sea necesario */
 }
-
 /*imagenes de enlaces github & open-outline a proyectos o histrial de trabajo*/
 .enlace_gh-pg {
     display: flex;
@@ -277,19 +282,23 @@ h1 {
     display: none;
 }
 
-.proyect h2 {
-    text-align: left;
+#proyect h2 {
     font-size: 28px;
     max-width: 80%;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0 auto 50px;
+}
+.h2-content {
+    padding-bottom: 20px; 
+}
+.proyect-boxes {
+    display: flex;
+    justify-content: space-around;
 }
 
 .proyect-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
-    padding: 20px;
 }
 
 .shadow-box {
@@ -300,10 +309,11 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 30%;
-    max-width: 400PX;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 10px; /* Añade margen entre las cajas */
 }
 
 .shadow-box img {
