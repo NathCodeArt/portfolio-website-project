@@ -23,6 +23,8 @@ Actualmente, el proyecto está en desarrollo activo, enfocándome en la implemen
 - Página de inicio
 - Sección de proyectos
 - Sección de Acerca de mí
+- 🚧 section play 🚧
+- 🚧 section About🚧
 - 🚧 Diseño adaptable 🚧
 - 🚧 Multilenguaje 🚧
 - 🚧 Modo oscuro 🚧
