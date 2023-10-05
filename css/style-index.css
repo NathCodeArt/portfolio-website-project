@@ -8,6 +8,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
+
 /*paleta de color*/
 :root {
     --text: #02050d;
@@ -20,23 +21,27 @@
 
 body {
     font-family: 'Cabin Condensed', sans-serif;
-    background-color:var(--background);
+    background-color: var(--background);
     min-height: 100vh;
 }
+
 p {
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     margin-bottom: 35px;
     font-size: 17px;
 }
+
 h1 {
     text-align: left;
     color: var(--text);
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 #header {
     position: fixed;
     z-index: 100;
@@ -49,6 +54,7 @@ h1 {
     align-items: center;
     display: flex;
 }
+
 .menu {
     display: flex;
     box-sizing: border-box;
@@ -56,153 +62,191 @@ h1 {
     align-items: center;
     flex-grow: 1;
 }
+
 .navbar {
     display: flex;
     align-items: center;
 }
+
 .menu .navbar ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 .menu .navbar ul li {
     position: relative;
     float: left;
 }
+
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 30px;
-    opacity: 30%;
+    opacity: 0.3; /* Corregido */
     text-decoration: none;
-}
+  }
+
 .menu .navbar ul li a:hover {
     color: var(--text);
 }
-.header-action{
+
+.header-actions {
     width: 30px;
     margin-right: 19px;
+  }
+
+.intagram {
+    color: var(--icon); /* Corregido */
 }
-.intagram{
-    color: var();
-}
+
 .logo {
     width: 40px;
     margin-right: 20px;
     display: flex;
     align-items: center;
-    color:var(--icon);
+    color: var(--icon);
 }
 
-#about{
+#about {
     display: flex;
     height: auto;
     align-items: center;
 }
+
 .about-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
 }
+
 .about-text {
     width: 50%;
     padding: 50px;
 }
+
 .about-text h1 {
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 20px;
 }
+
 .about-text p {
     line-height: 30px;
 }
+
 .about-img {
     width: 50%;
     text-align: center;
     padding: 10px 0;
 }
+
 .about-img img {
     width: 340px;
 }
-.enlace{
+
+.enlace {
     width: 20px;
     color: var(--icon);
 }
+
 #job {
     display: flex;
     height: auto;
     align-items: center;
 }
+
 .job1-content {
     display: flex;
     width: 100%;
 }
+
 .job1-img {
     width: 50%;
     text-align: center;
 }
+
 .job1-img img {
     width: 454px;
     width: 100%;
 }
+
 .job1-text {
     width: 50%;
     padding: 50px;
 }
+
 /*section 2*/
 .job2-content {
     display: flex;
-    flex-direction: row-reverse; /* Invertimos el orden de los elementos */
+    flex-direction: row-reverse;
+    /* Invertimos el orden de los elementos */
     width: 100%;
 }
+
 .job2-img {
     width: 50%;
     text-align: center;
 }
+
 .job2-img img {
     width: 100%;
     max-width: 654px;
 }
+
 .job2-text {
     width: 50%;
     padding: 20px;
 }
+
 .text-claro {
     color: #6D709D;
 }
+
 #proyect {
     padding: 50px 0;
 }
+
 .icon-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; /* Ajusta el ancho según sea necesario */
+    width: 100%;
+    /* Ajusta el ancho según sea necesario */
 }
+
 .icon-box a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
 }
+
 .icon-box img {
-    width: 30px; 
-    height: 30px; /* Ajusta el tamaño de los íconos según sea necesario */
-    margin: 0 10px; /* Ajusta el espacio entre los íconos según sea necesario */
+    width: 30px;
+    height: 30px;
+    /* Ajusta el tamaño de los íconos según sea necesario */
+    margin: 0 10px;
+    /* Ajusta el espacio entre los íconos según sea necesario */
 }
+
 /*imagenes de enlaces github & open-outline a proyectos o histrial de trabajo*/
 .enlace_gh-pg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .enlace_gh-pg a {
     width: 30px;
     margin: 0 10px;
     color: var(--icon);
 }
+
 /* Esto ocult los iconos que no se requieren */
 #box3 .enlace_gh-pg a:nth-child(1) {
     display: none;
 }
+
 .proyect h2 {
     text-align: left;
     font-size: 28px;
@@ -210,12 +254,14 @@ h1 {
     margin: 0 auto;
     padding: 10px;
 }
+
 .proyect-content {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     padding: 20px;
 }
+
 .shadow-box {
     background-color: #fff;
     padding: 20px;
@@ -229,42 +275,53 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .shadow-box img {
     max-width: 100%;
     margin-bottom: 20px;
 }
+
 .shadow-box p {
     font-size: 18px;
     text-align: center;
 }
-#box1, #box2, #box3 {
+
+#box1,
+#box2,
+#box3 {
     height: auto;
 }
+
 #footer {
     border-top: 2px solid #f5f5f5;
     background-color: #2E5BFF;
     color: #F3F6FD;
     padding: 20px 0 0 0;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .footer-text h2 {
     font-size: 45px;
     color: #33C3BA;
 }
+
 .footer-text p {
     font-size: 16px;
     margin-bottom: 30px;
 }
+
 .footer-socials {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     margin-top: 6%;
 }
+
 .footer-socials a {
     color: #F3F6FD;
     text-decoration: none;
@@ -276,13 +333,16 @@ h1 {
     .menu {
         padding: 30px;
     }
-    .menu label{
+
+    .menu label {
         display: initial;
     }
-    .socials-1{
+
+    .socials-1 {
         display: none;
     }
-    .menu .navbar{
+
+    .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -290,14 +350,17 @@ h1 {
         background-color: #303030;
         display: none;
     }
+
     .menu .navbar ul li {
         width: 100%;
     }
-    .menu .navbar ul li a{
+
+    .menu .navbar ul li a {
         color: #F3F6FD;
         padding: 20px;
     }
-    #menu:checked ~ .navbar{
+
+    #menu:checked~.navbar {
         display: initial;
     }
 }
