@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilos-play.css">
-    <link rel="shortcut icon" type="image/x-icon" href="png/logo.png">
-    <meta property="og:site_name" content="Natalia C.R.">
-    <meta property="og:title" content="Natalia C.R.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="png/logo.png">
-    <meta property="og:image:width" content="419">
-    <meta property="og:image:height" content="420">
+    <link rel="stylesheet" type="text/css" href="css/style-play.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/svg/logo.svg">
     <title>Play - Graphic Designer & Web Developer</title>
 </head>
+
 <body id="body">
     <header class="header">
         <div class="menu-container">
-            <a href="index.html" class="logo"><img src="png/logo.png" alt="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <!-- onclik para que al darle clik suba automaticamente al inicio de la pagina -->
-                <li><a href="index.html">Work</a></li>
-                <li><a href="#" onclick="scrollToTop()">Play</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="pdf/natalia_resume-2023.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-        <div class="socials-1">
-            <a href="#"class="intagram" target="_blank"><ion-icon name="logo-instagram" alt="cuenta de instagram"></ion-icon></a>
-        </div>
+            <a href="index.html" class=" logo"><img src="img/svg/logo.svg" alt="logo"></a>
+            <label for="" class="hamburger">
+                <img src="img/svg/menu.svg" alt="icon hamburger">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="#" class="active">Play</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pdf/natalia_resume-2023.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+            <!--Actions-->
+            <div class="header-actions">
+                <a href="#" class="instagram" target="_blank"><img src="img/svg/logo-instagram.svg"
+                        alt="cuenta de instagram"></a>
+            </div>
         </div>
     </header>
     <section id="header-content">
@@ -38,14 +38,14 @@
             </h1>
             <p>
                 As a multi-disciplinary designer, I enjoy exploring
-                 various ways to visualize my creativity. Hover
-                  over to play my daily UI work, motion graphics,
-                   and graphic designs.
+                various ways to visualize my creativity. Hover
+                over to play my daily UI work, motion graphics,
+                and graphic designs.
             </p>
         </div>
     </section>
     <section id="sec-1">
-        <img src="jpg/ilustracion.jpg" alt="ilustración">
+        <img src="img/jpg/ilustracion.jpg" alt="ilustración">
         <div id="text-sec-1">
             <h2>
                 Ilustration
@@ -56,7 +56,7 @@
         </div>
     </section>
     <section id="text-sec-2">
-        <img src="gif/logo.gif" alt="animación de logo corporativo">
+        <img src="img/gif/logo.gif" alt="animación de logo corporativo">
         <div>
             <h2>
                 Logo Animations
@@ -64,28 +64,28 @@
         </div>
     </section>
     <section id="text-sec-3">
-        <img src="gif/hover-boi.gif" alt="Motion graphics" id="gif-1">
-        <img src="gif/pista-1_whatsapp.gif" alt="Motion graphics" id="gif-2">
+        <img src="img/gif/hover-boi.gif" alt="Motion graphics" id="gif-1">
+        <img src="img/gif/pista-1_whatsapp.gif" alt="Motion graphics" id="gif-2">
     </section>
     <section id="sec">
         <a href="#">See more play.</a>
     </section>
     <footer id="footer">
-        <div class="footer-text">
-            <h2>Nice to see you here!</h2>
-            <p>cardosonatalia.rojas@gmail.com<br>
-            This website is best viewed on desktop
-            Made with love © 2023 Natalia Cardoso Rojas</p>
-        </div>
-        <div class="footer-socials">
-            <a href="mailto:ttrippy.dessin@gmail.com" alt="enviar un correo"><ion-icon name="mail-outline"></ion-icon></a>
-            <a href="#" alt="cuenta de linkedin" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="#" alt="cuenta de github" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="#" alt="cuenta de behance" target="_blank"><ion-icon name="logo-behance"></ion-icon></a>
+        <div class="footer-content container">
+            <div class="footer-text">
+                <h2>Nice to see you here!</h2>
+                <p>cardosonatalia.rojas@gmail.com<br><br>
+                    This website is best viewed on desktop<br>
+                    Made with love © 2023 Natalia Cardoso Rojas</p>
+            </div>
+            <div class="footer-socials">
+                <a href="mailto:ttrippy.dessin@gmail.com"><img src="img/svg/mail.svg" alt="logo e-mail"></a>
+                <a href="#" target="_blank"><img src="img/svg/logo-linkedin.svg" alt="logo linkedin"></ion-icon></a>
+                <a href="#" target="_blank"><img src="img/svg/logo-github.svg" alt="logo github"></a>
+                <a href="#" target="_blank"><img src="img/svg/logo-behance.svg" alt="logo behance"></a>
+            </div>
         </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="js/javascrip.js"></script>
 </body>
+
 </html>
