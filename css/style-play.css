@@ -1,0 +1,237 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
+
+/*paleta de color*/
+:root {
+    --text: #02050d;
+    --background: #f5f5f5;
+    --primary: #f5b505;
+    --secondary: #ecfdb4;
+    --accent: #e13805;
+    --icon: #303030;
+}
+
+body {
+    font-family: 'Cabin Condensed', sans-serif;
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 17px;
+    color: var(--text);
+}
+
+h1 {
+    text-align: left;
+    color: var(--text);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.3rem 10%;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.menu .navbar ul li a {
+    font-size: 23px;
+    padding: 30px;
+    opacity: 0.7;
+    text-decoration: none;
+    color: var(--background);
+    font-weight: bold;
+}
+
+.menu .navbar ul li a.active {
+    color: var(--text);
+}
+
+.menu .navbar ul li a:hover {
+    color: var(--text);
+}
+
+.menu .navbar ul li:last-child {
+    margin-right: 0;
+    /* No hay margen a la derecha para el último elemento */
+}
+
+.header-actions {
+    width: 30px;
+    margin-right: 19px;
+}
+
+.instagram {
+    color: var(--icon);
+    /* Corregido */
+}
+
+.logo {
+    width: 40px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--icon);
+}
+
+.hamburger {
+    width: 35px;
+    right: 5%;
+    color: var(--icon);
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+#footer {
+    border-top: 2px solid #f5f5f5;
+    background-color: #2E5BFF;
+    color: #F3F6FD;
+    padding: 20px 0 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text h2 {
+    font-size: 45px;
+    color: #33C3BA;
+}
+
+.footer-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--background);
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.footer-socials a {
+    color: #F3F6FD;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 25px;
+}
+
+/*breakpoints*/
+@media (max-width: 992px) {
+    #header {
+        padding: 1.3rem 5%;
+        /* Ajuste de padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .socials-1 {
+        display: none;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        height: 17.7rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: var(--text);
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+}
