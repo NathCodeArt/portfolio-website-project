@@ -12,7 +12,7 @@
     <header id="header">
         <div class="menu container">
             <a href="#" class="logo"><img src="img/svg/logo.svg" alt="logo"></a>
-            <label for="" class="hamburger">
+            <label for="menuToggle" class="hamburger">
                 <img src="img/svg/menu.svg" alt="icon hamburger">
             </label>
             <nav class="navbar">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </main>
-    <section id="job">
+    <section class="job">
         <div class="job1-content container">
             <div class="job1-img">
                 <a href="#"><img src="img/png/job1.png" alt="cartel avianca"></a>
@@ -76,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section id="job">
+    <section class="job">
         <div class="job2-content container">
             <div class="job2-img">
                 <a href="#"><img src="img/gif/sodexo.gif" alt="animación evento Sodexo"></a>
@@ -114,8 +114,8 @@
             </div>
             <div class="shadow-box" id="box2">
                 <a href="#" target="_blank"><img src="img/png/proyecto-2.png"
-                        alt="imagen de Spotify Top Song Analaysis"></a>
-                <p>Spotify Top Song Analaysis</p>
+                        alt="imagen de Spotify Top Song Analysis"></a>
+                <p>Spotify Top Song Analysis</p>
                 <div class="enlace_gh-pg">
                     <a href="#" target="_blank"><img src="img/svg/logo-behance.svg" alt="ver proyecto en behance"></a>
                     <a href="#" target="_blank"><img src="img/svg/logo-github.svg" alt="ver proyecto en github"></a>
@@ -143,10 +143,64 @@
                     Made with love © 2023 Natalia Cardoso Rojas</p>
             </div>
             <div class="footer-socials">
-                <a href="mailto:ttrippy.dessin@gmail.com"><img src="img/svg/mail.svg" alt="logo e-mail"></a>
-                <a href="#" target="_blank"><img src="img/svg/logo-linkedin.svg" alt="logo linkedin"></ion-icon></a>
-                <a href="#" target="_blank"><img src="img/svg/logo-github.svg" alt="logo github"></a>
-                <a href="#" target="_blank"><img src="img/svg/logo-behance.svg" alt="logo behance"></a>
+                <a href="mailto:ttrippy.dessin@gmail.com" aria-label="e-mail">
+                    <svg version="1.1" id="Capa_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                        <path class="st0"
+                            d="M30,0C13.4,0,0,13.4,0,30s13.4,30,30,30s30-13.4,30-30S46.6,0,30,0z M47.3,18.5L30,33.5l-17.3-15H47.3z
+	                        M11.5,19.6l12.7,11L11.5,41.5V19.6z M12.7,42.7l12.6-10.9l4.7,3.8l4.6-3.8l12.7,10.9H12.7z M48.5,41.5L35.8,30.6l12.7-11V41.5z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" target="_blank">
+                    <svg height="100%"
+                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                        version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path class="st0" d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,
+                            -114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,
+                            0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,
+                            -28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191
+                            -16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45
+                            0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,
+                            0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" aria-label="GitHub" target="_blank">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1
+		                    c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8C114.5,372.1,99.8,365,99.8,365c-20.3-14.3,1.5-14,1.5-14
+                            c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5
+                            c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7
+                            c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3
+                            c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7
+                            C480,134.8,379.7,32,256,32z" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Behance" target="_blank">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+                        style="enable-background:new 0 0 56.7 56.7;" xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M38,27.3c-3.2,0-3.6,3.2-3.6,3.2h6.7C41.2,30.4,41.2,27.3,38,27.3z" />
+                            <path class="st0"
+                                d="M22.7,30.4h-6v5.5H22c0.1,0,0.2,0,0.4,0c0.9,0,2.5-0.3,2.5-2.7C24.9,30.4,22.7,30.4,22.7,30.4z" />
+                            <path class="st0" d="M28.3,5.1c-13.6,0-24.6,11-24.6,24.6s11,24.6,24.6,24.6s24.6-11,24.6-24.6C53,16.1,41.9,5.1,28.3,5.1z M33.5,20.2H42v2.5
+                            h-8.5V20.2z M29.2,33.5c0,6.3-6.5,6.1-6.5,6.1h-6h-0.2H12V19h4.5h0.2h6c3.2,0,5.8,1.8,5.8,5.5s-3.1,3.9-3.1,3.9
+                            C29.5,28.4,29.2,33.5,29.2,33.5z M45.1,33.2H34.5c0,3.8,3.6,3.6,3.6,3.6c3.4,0,3.3-2.2,3.3-2.2H45c0,5.9-7,5.5-7,5.5
+                            c-8.4,0-7.9-7.9-7.9-7.9s0-7.9,7.9-7.9C46.3,24.2,45.1,33.2,45.1,33.2z" />
+                            <path class="st0"
+                                d="M24.2,24.8c0-2.1-1.5-2.1-1.5-2.1H22h-5.2v4.6h5.6C23.3,27.3,24.2,26.9,24.2,24.8z" />
+                        </g>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>

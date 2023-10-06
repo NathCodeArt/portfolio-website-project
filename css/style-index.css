@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Quicksand:wght@500&display=swap');
 
 /*paleta de color*/
 :root {
@@ -36,6 +35,11 @@ p {
 h1 {
     text-align: left;
     color: var(--text);
+}
+
+ul,
+li {
+    text-decoration: none;
 }
 
 .container {
@@ -188,7 +192,7 @@ h1 {
     color: var(--icon);
 }
 
-#job {
+.job {
     display: flex;
     height: auto;
     align-items: center;
@@ -246,24 +250,6 @@ h1 {
     text-align: center;
 }
 
-.icon-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    /* Ajusta el ancho según sea necesario */
-}
-
-.icon-box a {
-    text-decoration: none;
-    /* Elimina el subrayado del enlace */
-}
-
-.icon-box img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-}
 /*imagenes de enlaces github & open-outline a proyectos o histrial de trabajo*/
 .enlace_gh-pg {
     display: flex;
@@ -287,9 +273,11 @@ h1 {
     max-width: 80%;
     margin: 0 auto 50px;
 }
+
 .h2-content {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
+
 .proyect-boxes {
     display: flex;
     justify-content: space-around;
@@ -313,7 +301,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 10px; /* Añade margen entre las cajas */
+    margin: 0 10px;
+    /* Añade margen entre las cajas */
 }
 
 .shadow-box img {
@@ -353,22 +342,29 @@ h1 {
 .footer-text p {
     font-size: 16px;
     margin-bottom: 30px;
+    color: var(--background);
 }
 
 .footer-socials {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 6%;
 }
 
 .footer-socials a {
-    color: #F3F6FD;
     text-decoration: none;
-    margin-right: 60px;
+    margin-right: 10px;
     font-size: 25px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
 }
-
+/*icono footer*/
+.st0 {
+    fill:var(--background);
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
 /*breakpoints*/
 @media (max-width: 992px) {
     #header {
