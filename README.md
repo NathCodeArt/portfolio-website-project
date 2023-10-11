@@ -1,4 +1,8 @@
-<h1 align="center"> Portfolio Website Project </h1>
+
+![progres-bar](https://github.com/NathCodeArt/portfolio-website-project/assets/127164921/3d70656f-b63f-413a-8120-95a1d68cc214)
+
+<h1 alig![Uploading progres-bar.png…]()
+n="center"> Portfolio Website Project </h1>
 
 ![Portada del Proyecto](https://github.com/NathCodeArt/NathCodeArt/assets/127164921/d7f35e4f-8c15-48ad-a9d8-3fca19602173)
 
