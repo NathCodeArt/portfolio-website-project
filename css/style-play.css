@@ -295,18 +295,17 @@ a {
     height: 45px;
     line-height: 45px;
 }
-
 /*icono footer*/
 .st0 {
-    fill: var(--background);
+    fill:var(--background);
     fill-rule: evenodd;
     clip-rule: evenodd;
 }
-
 /*breakpoints*/
 @media (max-width: 992px) {
     #header {
         padding: 1.3rem 5%;
+        /* Ajuste de padding */
     }
 }
 
