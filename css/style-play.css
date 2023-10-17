@@ -146,27 +146,11 @@ a {
     display: none;
     position: absolute;
 }
-
-#content {
-    display: flex;
-    height: auto;
-    align-items: center;
-}
-
-.header-text {
-    width: 50%;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
-}
-
 #about {
     display: flex;
     height: auto;
     align-items: center;
-    padding: 40px;
+    padding-top: 130px;
 }
 
 .about-content {
@@ -255,6 +239,7 @@ a {
 #sec a {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
+    color: var(--text);
 }
 
 #footer {
